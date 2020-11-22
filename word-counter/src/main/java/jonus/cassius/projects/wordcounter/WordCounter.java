@@ -25,6 +25,9 @@ public class WordCounter {
 		}
 		this.source = source;
 	}
+	public File getSourceFile() {
+		return source;
+	}
 
 	/**
 	 * Returns the number of words in the file associated with this object.
@@ -37,9 +40,8 @@ public class WordCounter {
 		BufferedReader reader = new BufferedReader(new FileReader(this.source));
 		String line;
 		while ((line = reader.readLine()) != null) {
-			System.out.println(line);
 			if (!line.isEmpty()) {
-				numWords += line.trim().split("\\s+\\b+").length;
+				numWords += line.trim().split("\\W*\\s+\\W*").length;
 			}
 		}
 		reader.close();
