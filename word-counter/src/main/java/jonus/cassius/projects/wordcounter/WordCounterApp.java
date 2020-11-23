@@ -12,8 +12,9 @@ import javafx.scene.Scene;
  *         and then displays the number of words or characters in the file
  *         depending on the user's choice.
  */
-public class Main extends Application {
+public class WordCounterApp extends Application {
 
+	@SuppressWarnings("exports")
 	@Override
 	public void start(Stage primaryStage) {
 		
@@ -22,5 +23,7 @@ public class Main extends Application {
 		primaryStage.show();
 	}
 	
-
+	public static void main(String[] args) {
+		launch(args);
+	}
 }
