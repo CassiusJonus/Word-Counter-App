@@ -86,10 +86,10 @@ public class MainPane extends GridPane {
 			Alert fileError = new Alert(AlertType.ERROR);
 			fileError.setTitle("File Reading Error");
 			fileError.setHeaderText(null);
-			fileError.setContentText("There was a problem reading the file");
+			fileError.setContentText("There was a problem accessing the file or no file was entered.");
 			fileError.initModality(Modality.APPLICATION_MODAL);
 			fileError.showAndWait();
-			e.printStackTrace();
+//			e.printStackTrace();
 		}
 	}
 
@@ -107,10 +107,10 @@ public class MainPane extends GridPane {
 			Alert fileError = new Alert(AlertType.ERROR);
 			fileError.setTitle("File Reading Error");
 			fileError.setHeaderText(null);
-			fileError.setContentText("There was a problem reading the file");
+			fileError.setContentText("There was a problem accessing the file or no file was entered.\n\n");
 			fileError.initModality(Modality.APPLICATION_MODAL);
 			fileError.showAndWait();
-			e.printStackTrace();
+//			e.printStackTrace();
 		}
 	}
 
