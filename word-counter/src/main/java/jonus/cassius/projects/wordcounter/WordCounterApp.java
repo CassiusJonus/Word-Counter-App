@@ -16,14 +16,14 @@ public class WordCounterApp extends Application {
 
 	@SuppressWarnings("exports")
 	@Override
-	public void start(Stage primaryStage) {
+	public void start(Stage stage) {
 		
-		primaryStage.setScene(new Scene(new MainPane()));
-		primaryStage.setTitle("Word Counter");
-		primaryStage.show();
+		stage.setScene(new Scene(new MainPane()));
+		stage.setTitle("Word Counter");
+		stage.show();
 	}
 	
-	public static void main(String[] args) {
-		launch(args);
-	}
+//	public static void main(String[] args) {
+//		launch(args);
+//	}
 }
